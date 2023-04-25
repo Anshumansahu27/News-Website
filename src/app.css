@@ -11,6 +11,10 @@ body {
   background: rgb(255, 255, 255);
 }
 
+.logo {
+  width: 70px;
+}
+
 .all__news {
   margin: 50px auto;
   display: grid;
@@ -34,6 +38,8 @@ body {
 .head__text {
   margin-top: 30px;
   margin-right: 10px;
+  font-size: 70px;
+  color: rgb(15, 146, 0);
 }
 
 .news__desc {
@@ -42,6 +48,10 @@ body {
   line-height: 25px;
   font-size: 14px;
   padding-bottom: 10px;
+}
+
+.news-img {
+  width: 500px;
 }
 
 .img_caption {
@@ -67,4 +77,22 @@ body {
   margin-top: 10px;
   color: rgb(122, 122, 122);
 }
+
+.button {
+
+  margin-top: 10px;
+
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+  background-color:#ffffff;
+  color: #000000;
+  border:none;
+  border-radius:5px;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+}
+
 

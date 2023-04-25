@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { NewsContext } from "../NewsContext";
 import NewsArticle from "./NewsArticle";
+import img1 from './KIIT-logo-HD.png';
 
 function News(props) {
   const { data } = useContext(NewsContext);
@@ -8,13 +9,14 @@ function News(props) {
 
   return (
     <div>
-      <h1 className="head__text">News App 👋</h1>
+      <h1 className="head__text"><img className="logo" src={img1} alt="" />    KIIT NEWS</h1>
       <div className="all__news">
         {data
           ? data.articles.map((news) => (
               <NewsArticle data={news} />
             ))
-          : "Loading"}
+          : "Loading" }
+          
       </div>
     </div>
   );

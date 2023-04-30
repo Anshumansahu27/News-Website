@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SingleNewsItem = ({item}) => {
   return (
@@ -11,7 +12,7 @@ const SingleNewsItem = ({item}) => {
       <span className="news__author">{item.author}</span> <br />
       <span className="news__published">{item.publishedAt}</span>
       <span className="news__source">{item.source.name}</span>
-      <p><button class="button"> <a href={item.url}>Read more</a></button></p>
+      <p><button class="button"><Link to="./{item.id}">Read More</Link></button></p>
     </div>
     </div>
   )

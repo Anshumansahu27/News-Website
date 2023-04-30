@@ -36,7 +36,6 @@ class TopHeadlines extends Component {
     return (
       <div className="all__news">
         {this.state.news.map((item, i) => (<SingleNewsItem key={i} item={item}/> ))}
-          
       </div>
     );  
   }

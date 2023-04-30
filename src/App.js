@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Header from './elements/Header.js';
 import AllNews from './news/AllNews.js';
 import TopHeadlines from './news/TopHeadlines.js';
+import DetailNews from './news/DetailNews.js';
 
 import './App.css';
 
@@ -19,7 +20,8 @@ class App extends Component {
 
                 <Switch>
                   <Route path="/" exact={true} component={TopHeadlines} ></Route>
-                  <Route path="/:handle" component={AllNews} ></Route>
+                  <Route path="/search/:handle" component={AllNews} ></Route>
+                  <Route path="/:handle" component={DetailNews} ></Route>
                   <Route component={() => (<div>404 Not found </div>)} />
                 </Switch>
               </div>

@@ -23,8 +23,22 @@ body {
   grid-gap: 20px;
 }
 
+.single__news {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+
 .news {
   max-width: 500px;
+  padding: 0px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.news1 {
+  max-width: 1100px;
   padding: 0px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
@@ -53,6 +67,10 @@ body {
 
 .news-img {
   width: 500px;
+}
+
+.news-img1 {
+  width: 1100px;
 }
 
 .img_caption {

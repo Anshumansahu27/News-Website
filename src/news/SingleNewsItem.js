@@ -5,7 +5,7 @@ const SingleNewsItem = ({item}) => {
   return (
     <div className="news">
       <div ClassName="news-item">
-      <img className='news-img' src={item.url} alt={item.url} />
+      <img className='news-img' src={item.urlToImage} alt={item.urlToImage} />
       <p className="img_caption">{item.img_caption}</p>
       <h1 className="news__title">{item.title}</h1>
       <p className="news__desc">{item.description}</p>

@@ -28,7 +28,7 @@ class Header extends Component {
           <h2><input type="text" placeholder="search here" 
           value={this.state.value} 
           onChange={this.handleChange}/> 
-          <Link to="/{this.target.value}">
+          <Link to="/search/{this.target.value}">
             <button class="button">search</button>
             </Link>
           </h2>

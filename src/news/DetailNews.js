@@ -19,7 +19,7 @@ class DetailNews extends Component {
 
     await axios.get(api_endpoint).then(function (response){
       const data = response.data;
-      const news = data.articles.slice(0, 30);
+      const news = data.articles.slice(0, 1);
       console.log(handle);
 
       self.setState({

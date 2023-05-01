@@ -12,7 +12,7 @@ const SingleNewsItem = ({item}) => {
       <span className="news__author">{item.author}</span> <br />
       <span className="news__published">{item.publishedAt}</span>
       <span className="news__source">{item.source.name}</span>
-      <p><button class="button"><Link to="/{item.source.id}">Read More</Link></button></p>
+      <p><Link to={item.source.id}><button class="button">Read More</button></Link></p>
     </div>
     </div>
   )

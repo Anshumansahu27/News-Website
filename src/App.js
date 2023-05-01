@@ -20,8 +20,8 @@ class App extends Component {
 
                 <Switch>
                   <Route path="/" exact={true} component={TopHeadlines} ></Route>
-                  <Route path="/search/:handle" component={AllNews} ></Route>
-                  <Route path="/:handle" component={DetailNews} ></Route>
+                  <Route path='/:handle' component={AllNews} ></Route>
+                  <Route path="/detail/:handle" component={DetailNews} ></Route>
                   <Route component={() => (<div>404 Not found </div>)} />
                 </Switch>
               </div>

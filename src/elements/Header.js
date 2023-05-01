@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import img1 from './KIIT-logo-HD.png';
-import { useState } from 'react';
 
 class Header extends Component {
 
@@ -16,7 +15,6 @@ class Header extends Component {
     this.setState({value: event.target.value});
   }
 
-
   render() {
     return (<div>
             <div>
@@ -25,18 +23,18 @@ class Header extends Component {
               
           
 
-          <h2><input type="text" placeholder="search here" 
+          <h2><input className='search__space' type="text" placeholder="search here" 
           value={this.state.value} 
-          onChange={this.handleChange}/> 
-          <Link to="/search/{this.target.value}">
+          onChange={this.handleChange}/>
+          <Link to={this.state.value}>
             <button class="button">search</button>
             </Link>
           </h2>
-            <Link to="/">Headlines</Link>
-            <Link to="/search/politics">Politics</Link>
-            <Link to="/search/business">Business</Link>
-            <Link to="/search/sports">Sports</Link>
-            <Link to="/search/cryptos">Cryptos</Link>
+            <Link to="/"><button class="button">Headlines</button></Link>
+            <Link to="/politics"><button class="button">Politics</button></Link>
+            <Link to="/business"><button class="button">Business</button></Link>
+            <Link to="/sports"><button class="button">Sports</button></Link>
+            <Link to="/cryptos"><button class="button">Cryptos</button></Link>
             </div>
             </div>
 

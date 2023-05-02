@@ -55,6 +55,9 @@ body {
   margin-right: 10px;
   font-size: 70px;
   color: rgb(15, 146, 0);
+  font-family: 'Myriad Pro Regular';
+  font-style: normal;
+  font-weight: normal;
 }
 
 .news__desc {

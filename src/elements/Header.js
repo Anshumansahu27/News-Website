@@ -26,15 +26,16 @@ class Header extends Component {
           <h2><input className='search__space' type="text" placeholder="search here" 
           value={this.state.value} 
           onChange={this.handleChange}/>
-          <Link to={this.state.value}>
+          <Link to={'/search/'+(this.state.value)}>
             <button class="button">search</button>
             </Link>
           </h2>
-            <Link to="/"><button class="button">Headlines</button></Link>
-            <Link to="/politics"><button class="button">Politics</button></Link>
-            <Link to="/business"><button class="button">Business</button></Link>
-            <Link to="/sports"><button class="button">Sports</button></Link>
-            <Link to="/cryptos"><button class="button">Cryptos</button></Link>
+            <Link to='/'><button class="button">Headlines</button></Link>
+            <Link to='/tag/india'><button class="button">India</button></Link>
+            <Link to='/tag/world'><button class="button">World</button></Link>
+            <Link to='/tag/business'><button class="button">Business</button></Link>
+            <Link to='/tag/sports'><button class="button">Sports</button></Link>
+            <Link to='/tag/stocks'><button class="button">Stocks</button></Link>
             </div>
             </div>
 

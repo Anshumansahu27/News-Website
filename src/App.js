@@ -4,8 +4,9 @@ import Header from './elements/Header.js';
 import AllNews from './news/AllNews.js';
 import TopHeadlines from './news/TopHeadlines.js';
 import DetailNews from './news/DetailNews.js';
+import TagsNews from './news/TagsNews.js'
 
-import './App.css';
+import './app.css';
 
 class App extends Component {
   render() {
@@ -19,9 +20,10 @@ class App extends Component {
                 <Header />
 
                 <Switch>
-                  <Route path="/" exact={true} component={TopHeadlines} ></Route>
-                  <Route path='/:handle' component={AllNews} ></Route>
-                  <Route path="/detail/:handle" component={DetailNews} ></Route>
+                  <Route path='/' exact={true} component={TopHeadlines} ></Route>
+                  <Route path='/search/:handle' component={AllNews} ></Route>
+                  <Route path='/tag/:handle' component={TagsNews} ></Route>
+                  <Route path='/detail/:handle' component={DetailNews} ></Route>
                   <Route component={() => (<div>404 Not found </div>)} />
                 </Switch>
               </div>

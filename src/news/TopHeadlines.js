@@ -13,8 +13,7 @@ class TopHeadlines extends Component {
 
   fetchNews = async () => {
     const self = this;
-    const api_key = "00996750f97644cca91df97021253add";
-    const api_endpoint = `https://newsapi.org/v2/top-headlines?country=us&sortBy=publishedAt&language=en&apiKey=${api_key}`;
+    const api_endpoint = `http://localhost:5000/`;
 
     await axios.get(api_endpoint).then(function (response){
       const data = response.data;

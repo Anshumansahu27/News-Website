@@ -14,7 +14,7 @@ class AllNews extends Component {
   fetchNews = async () => {
     const self = this;
     const { handle } = self.props.match.params;
-    const api_endpoint = `http://localhost:5000/search/${handle}`;
+    const api_endpoint = `http://localhost:5000/tag/${handle}`;
 
     await axios.get(api_endpoint).then(function (response){
       const data = response.data;
